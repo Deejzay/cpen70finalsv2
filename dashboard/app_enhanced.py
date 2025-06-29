@@ -68,7 +68,7 @@ st.markdown("""
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 # --- Global Variables and Data Loading ---
-PROCESSED_DATA_PATH = '../data/processed/processed_data.csv'
+PROCESSED_DATA_PATH = 'data/processed/processed_data.csv'
 LOOK_BACK = 12
 
 # Define parameter groups
@@ -120,7 +120,7 @@ FEATURE_COLUMNS = [
 ]
 
 # Use the multi-output model for enhanced predictions
-MODEL_PATH = '../models/hybrid_model_enhanced_multi_output.h5'
+MODEL_PATH = 'models/hybrid_model_enhanced_multi_output.h5'
 
 @st.cache_data
 def load_and_preprocess_data():
