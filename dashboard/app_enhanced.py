@@ -128,7 +128,7 @@ def load_and_preprocess_data():
     try:
         df = pd.read_csv(PROCESSED_DATA_PATH, index_col=0, parse_dates=True)
         # Load the scaler from file (do not fit a new one)
-        scaler = joblib.load('../data/processed/scaler.pkl')
+        scaler = joblib.load('data/processed/scaler.pkl')
         return df, scaler
     except Exception as e:
         st.error(f"Error loading or preprocessing data: {e}")
